@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
         <div class="hero">
             <h1>Hola, soy Enzo</h1>
-            <p>Diseñador Web Front-End en busca de experiencia y aprendizaje. Estoy haciendo servicios gratuitos por ahora para ir adquiriendo está experiencia y este aprendizaje.</p>
+            <p>Diseñador Web Front-End</p>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section about">
         <h2>Sobre mí</h2>
-        <p>Soy uruguayo, tengo 17 años y estoy a punto de entrar a la universidad para estudiar la carrera que me gusta; Diseño UI/UX, también me gusta la animación 2D/3D o el dibujo así que está dentro de mis planes estudiar esto también.</p>
+        <p>[Descripción breve sobre ti]</p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="section portfolio">
         <h2>Portafolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="portfolio-img">
                 <h3>Proyecto 1</h3>
                 <p>Descripción del proyecto</p>
             </div>
@@ -39,27 +39,24 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section contact">
         <h2>Contacto</h2>
-        <form id="contact-form" action="send_email.php" method="POST">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="message">Mensaje:</label>
-    <textarea id="message" name="message" required></textarea>
-    
-    <button type="submit">Enviar</button>
-</form>
-
+        <form id="contact-form" action="send_email.php" method="POST" class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+            
+            <button type="submit" class="form-button">Enviar</button>
+        </form>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Enzo. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
