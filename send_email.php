@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Configuración del correo
-    $recipient = "tucorreo@gmail.com"; // Reemplaza con tu dirección de Gmail
+    $recipient = "gonzalezenzo851@gmail.com"; // Reemplaza con tu dirección de Gmail
     $subject = "Nuevo mensaje de $name";
     
     // Contenido del correo
@@ -27,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Enviar el correo
     if (mail($recipient, $subject, $email_content, $email_headers)) {
         http_response_code(200);
-        echo "Gracias! Tu mensaje ha sido enviado.";
+        echo "Gracias! Tu mensaje ha sido enviado y me pondré en contacto enseguida.";
     } else {
         http_response_code(500);
-        echo "Ups! Ocurrió un problema y no pudimos enviar tu mensaje.";
+        echo "Ups! Ocurrió un problema y no pude enviar tu mensaje. Contactame por Ig: @zh_enzoo";
     }
 
 } else {
