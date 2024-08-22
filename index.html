@@ -3,60 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Enzo</title>
+    <title>Enzo - Diseñador Web Front-End</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Enzo</a>
+            </div>
             <ul class="nav-list">
                 <li><a href="#home" class="nav-link">Inicio</a></li>
                 <li><a href="#about" class="nav-link">Sobre mí</a></li>
                 <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
                 <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-        <div class="hero">
-            <h1>Hola, soy Enzo</h1>
-            <p>Diseñador Web Front-End</p>
-        </div>
     </header>
 
-    <section id="about" class="section about">
-        <h2>Sobre mí</h2>
-        <p>[Descripción breve sobre ti]</p>
-    </section>
-
-    <section id="portfolio" class="section portfolio">
-        <h2>Portafolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="proyecto1.jpg" alt="Proyecto 1" class="portfolio-img">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hola, soy <span class="highlight">Enzo</span></h1>
+                <p class="hero-subtitle">Diseñador Web Front-End</p>
+                <a href="#contact" class="cta-button">Contáctame</a>
             </div>
-            <!-- Más proyectos aquí -->
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section contact">
-        <h2>Contacto</h2>
-        <form id="contact-form" action="send_email.php" method="POST" class="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" class="form-input" required>
-            
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" class="form-input" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" class="form-textarea" required></textarea>
-            
-            <button type="submit" class="form-button">Enviar</button>
-        </form>
-    </section>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="profile-image.jpg" alt="Enzo" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <p>[Descripción breve sobre ti]</p>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fab fa-react"></i> React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 class="section-title">Portafolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="proyecto1.jpg" alt="Proyecto 1" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Proyecto 1</h3>
+                            <p>Descripción del proyecto</p>
+                            <a href="#" class="portfolio-link">Ver detalles</a>
+                        </div>
+                    </div>
+                    <!-- Más proyectos aquí -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <form id="contact-form" action="send_email.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Enzo. Todos los derechos reservados.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Enzo. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
